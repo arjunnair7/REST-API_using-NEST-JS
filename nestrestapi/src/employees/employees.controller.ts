@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body, Patch, Param, Delete,Query,Ip } from '@nes
 import { EmployeesService } from './employees.service';
 import { Prisma } from '@prisma/client';
 import { Throttle,SkipThrottle } from '@nestjs/throttler';
-import { MyLoggerService } from 'src/my-logger/my-logger.service';
+import { MyLoggerService } from '../my-logger/my-logger.service';
 
 @SkipThrottle()
 @Controller('employees')
