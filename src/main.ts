@@ -21,7 +21,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
 
   // Check if the database connection works
-  const prismaService = app.get(DatabaseService); // Replace with your DB service
+  const prismaService = app.get(DatabaseService); 
   try {
     await prismaService.$connect();
     console.log('Database connection successful');
