@@ -12,7 +12,7 @@ async function bootstrap() {
 
   // Enable CORS with optional origin restrictions (adjust as necessary)
   app.enableCors({
-    origin: '*', // Replace '*' with your specific origin(s) if needed
+    origin: '*', 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
